@@ -1,0 +1,146 @@
+/*Search*/
+.navbar-search {
+    position: relative;
+    display: flex;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    visibility: hidden;
+    z-index: 999;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.navbar-search.show-nav-search {
+    visibility: visible;
+    opacity: 1;
+
+}
+
+
+.navbar-search .search-field {
+    width: 400px;
+    height: 60%;
+    opacity: 1;
+    transition: all .2s ease-in-out;
+    flex: 9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+    .navbar-search .search-field {
+        width: 70%;
+    }
+}
+
+.navbar-search .search-field input {
+    width: 90%;
+    height: 90%;
+    border: none;
+    border-bottom: 1px solid rgb(128, 128, 128);
+    padding: 10px;
+    outline: none !important;
+    transition: all .2s ease-in-out;
+    background: rgba(253, 253, 253, 0.94);
+
+}
+
+
+/*Close*/
+
+.navbar-search .navbar-search-close {
+    position: relative;
+    border: none;
+    outline: 0 !important;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    right: 395px;
+}
+
+.navbar-search .navbar-search-close .far {
+    font-size: 1.5rem;
+    color: #cfcfcf;
+    border: none;
+}
+
+.navbar-search .navbar-search-close .far:hover {
+    color: #d6d6d6;
+}
+
+/*toggler*/
+
+
+.nav-search-field-toggler {
+    position: relative;
+    border: none;
+    outline: 0 !important;
+    cursor: pointer;
+    color: transparent;
+    background-color: transparent;
+    visibility: hidden;
+    right: 100px;
+}
+
+.nav-search-field-toggler.show-nav-search {
+    visibility: visible;
+    opacity: 1;
+}
+
+.nav-search-field-toggler .far {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    font-size: 25px;
+    color: #666;
+    border: none;
+    background: transparent;
+}
+
+.nav-search-field-toggler .far:hover {
+    color: #b4acac;
+}
+
+.dataResult {
+    position: relative;
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 300px;
+    height: auto;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+.dataResult::-webkit-scrollbar {
+    display: none;
+}
+
+.dataResult .dataItem {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.dataItem p {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightgrey;
+}
+
+#clearBtn {
+    cursor: pointer;
+}

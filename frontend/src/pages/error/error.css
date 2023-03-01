@@ -1,0 +1,23 @@
+
+
+.content-section {
+    position: absolute;
+    display: block;
+    width: inherit;
+    height: inherit;
+    background: #ffffff;
+    padding: 50px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    margin: 20px;
+    top: 20%;
+    left: 30%;
+}
+.content-section h1{
+    font-size: 100px;
+    margin: 10px;
+}
+.content-section p{
+    font-size: 50px;
+    margin: 10px;
+}

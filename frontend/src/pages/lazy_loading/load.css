@@ -1,0 +1,38 @@
+
+.load{
+    background-color: white;
+    text-align: center;
+
+}
+
+.image {
+    position: relative;
+    display: block;
+    width: 800px;
+    height: 400px;
+    margin: 10% auto auto;
+    animation: scale-image 3s  ease-in-out infinite;
+}
+
+@keyframes scale-image {
+    0% {
+        transform: scale(0.8, 0.8);
+        transition: all 2s ease-in-out;
+    }
+    25% {
+        transform: scale(0.85, 0.85);
+        transition: all 2s ease-in-out;
+    }
+    50% {
+        transform: scale(0.9, 0.9);
+        transition: all 2s ease-in-out;
+    }
+    75% {
+        transform: scale(0.95, 0.95);
+        transition: all 2s ease-in-out;
+    }
+    100% {
+        transform: scale(1, 1);
+        transition: all 3s ease-in-out;
+    }
+}

@@ -1,0 +1,19 @@
+import React from "react";
+import Post from "../post/Post";
+import "./posts.css";
+
+export default function Posts({ posts }) {
+  
+  
+  return (
+
+   <div className="posts">
+      {posts.map((p, index) => (
+        <Post post={p} key = {index} />
+      ))}
+    </div>
+
+  );
+
+}
+

@@ -1,7 +1,7 @@
 from flask import (Blueprint, session)
 from flask import request, jsonify, make_response
-from flask_projects.bloggy.app.database.model import *
-from flask_projects.bloggy.app.API.text_summarization import article_summary
+from ..database.model import *
+from ..API.text_summarization import article_summary
 import time as t
 from werkzeug.exceptions import HTTPException
 
